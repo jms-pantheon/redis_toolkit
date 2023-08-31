@@ -8,7 +8,7 @@ The toolkit has 2 types of reporting:
 > **Warning**  
 > **Monitoring will make Redis very slow**  
 > Every `monitor` client running on a Redis container reduces performance by as much as 50%  
-> https://redis.io/commands/monitor/#cost-of-running-monitor
+> See [Costs of Running Monitor](https://redis.io/commands/monitor/#cost-of-running-monitor)
 
 
 ## Installation
