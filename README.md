@@ -5,7 +5,8 @@ The toolkit has 2 types of reporting:
 * *hit rate* - actively monitors a redis database using the `redis-cli monitor` command (https://redis.io/commands/monitor), stores the commands Redis is running locally and then generates a report.
 * *memory* - dumps the contents of the Redis database locally and analyzes the memory distribution per key.
 
-> :warning: **Monitoring will make Redis slow** 
+> **Warning** 
+> **Monitoring will make Redis very slow**
 > Every `monitor` client running on a Redis container reduces performance by as much as 50% 
 > (https://redis.io/commands/monitor/#cost-of-running-monitor)
 
