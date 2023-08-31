@@ -5,13 +5,17 @@ The toolkit has 2 types of reporting:
 * *hit rate* - actively monitors a redis database using the `redis-cli monitor` command (https://redis.io/commands/monitor), stores the commands Redis is running locally and then generates a report.
 * *memory* - dumps the contents of the Redis database locally and analyzes the memory distribution per key.
 
-## Installation
-A valid docker install is required. 
+> :warning: **Monitoring will make Redis slow** 
+> Every `monitor` client running on a Redis container reduces performance by as much as 50% 
+> (https://redis.io/commands/monitor/#cost-of-running-monitor)
 
-Clone this repository, go to the clonned directory and run the commands below. The output should be displayed on screen.
+
+## Installation
+A valid Docker install is required. 
+
+Clone this repository, go to the cloned directory and run the command below. The output should be displayed on screen.
 
 ```
-$ chmod +x ./redis-toolkit
 $ ./redis-toolkit install
 ```
 
